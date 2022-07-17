@@ -207,18 +207,21 @@
 							"formdata": [
 								{
 									"key": "username",
-									"value": "path",
-									"type": "text"
+									"value": "path123",
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "password",
-									"value": "path",
-									"type": "text"
+									"value": "path123",
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "email",
-									"value": "test@path.com",
-									"type": "text"
+									"value": "test123@path.com",
+									"type": "text",
+									"disabled": true
 								}
 							]
 						},
@@ -256,7 +259,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"username\":\"path\",\"password\":\"path\"}"
+							"raw": "{\"username\":\"path\",\"password\":\"path\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "{{dev}}/api/login_check",
