@@ -9,7 +9,7 @@
 5. Run `composer install` command; this will generate _vendor_ folder.
 6. Run commands `php bin/console doctrine:schema:create` to create tables and `php bin/console doctrine:fixtures:load` to test data into a database.
 7. Generate for JWT token `php bin/console lexik:jwt:generate-keypair`
-8. If the docker was successful you can see `http://localhost/api/status` website on your browser.
+8. If everything is ok you can see `http://localhost/api/status` website on your browser.
 
 ## Getting Started
 
