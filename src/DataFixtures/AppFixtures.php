@@ -15,6 +15,7 @@ class AppFixtures extends Fixture
         for ($i = 1; $i < 5; $i++) {
             $product = new Product();
             $product->setName('Product Name' . $i);
+            $product->setShippingDate($i);
             $product->setCreateDate(new DateTime('now'));
             $manager->persist($product);
 
