@@ -29,7 +29,7 @@ class AuthControllerTest extends WebTestCase
         $response = $this->client->getResponse();
         
         $this->assertSame(Response::HTTP_UNPROCESSABLE_ENTITY, $response->getStatusCode());
-        $this->assertEquals('{"errors":"Invalid Username or Password or Email"}', $response->getContent());
+        $this->assertEquals('{"errors":{"[password]":"This value should not be blank.","[email]":"This value should not be blank."}}', $response->getContent());
     }
 
     /**

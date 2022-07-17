@@ -66,7 +66,7 @@ class OrderControllerTest extends WebTestCase
         $this->createAuthenticatedClient();
         
         // Request a specific page
-        $this->client->request('GET', '/api/orders/2');
+        $this->client->request('GET', '/api/orders/1');
         
         // the HttpKernel response instance
         $response = $this->client->getResponse();
